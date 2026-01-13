@@ -160,14 +160,3 @@ healthcare-eligibility-pipeline/
 * Record-level CDC/merge logic is not implemented because the assessment does not provide update semantics (effective dates, change flags, etc.).
 * The design supports incremental file-level processing by adding partitioned paths (e.g., ingest_date folders) if needed.
 
-```
-
----
-
-## If you want, I can also:
-- convert your notebook into **`src/` Python scripts** (production style)
-- add an **architecture diagram** for GitHub (S3 → Databricks → Delta Gold)
-- add **incremental file-level ingestion** using `ingest_date=YYYY-MM-DD` folders (no guessing CDC)
-
-Just tell me what repo name + folder structure you want.
-```
